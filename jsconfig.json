@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "checkJs": false,
+    "strict": false,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false
+  },
+  "include": ["problems/**/*.js", "lib/**/*.js", "scripts/**/*.js", "vitest.config.js"],
+  "exclude": ["node_modules"]
+}

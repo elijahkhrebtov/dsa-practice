@@ -1,0 +1,23 @@
+{
+  "name": "dsa-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Data structures & algorithms practice problems in plain JavaScript, with tests, hints and explained solutions.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "solve": "node scripts/solve.js",
+    "watch": "node scripts/solve.js --watch",
+    "solution": "node scripts/solve.js --solution",
+    "index": "node scripts/build-index.js",
+    "test": "vitest run",
+    "verify": "node scripts/solve.js --all --solution",
+    "check": "node scripts/check.js"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
+  }
+}

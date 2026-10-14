@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "DSA: solve current problem",
+      "detail": "Run the tests of the problem whose file is open (updates INDEX.md)",
+      "type": "shell",
+      "command": "node scripts/solve.js \"${fileDirname}\"",
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "DSA: watch current problem",
+      "detail": "Re-run the tests of the open problem on every save",
+      "type": "shell",
+      "command": "node scripts/solve.js \"${fileDirname}\" --watch",
+      "group": "test",
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "DSA: run reference solution for current problem",
+      "type": "shell",
+      "command": "node scripts/solve.js \"${fileDirname}\" --solution",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}
